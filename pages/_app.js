@@ -1,5 +1,11 @@
+// Styles
 import '../styles/globals.scss'
+import '../styles/navbar.scss'
+import '../styles/home/hero.scss'
+
+// Components
 import Layout from '../components/Layout'
+
 
 function MyApp({ Component, pageProps, router }) {
     return (

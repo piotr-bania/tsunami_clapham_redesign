@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import Footer from '../components/Footer'
+
+// Components
+import Hero from '../components/home/Hero'
+import Section_b from '../components/home/Section_b'
 
 export default function Home() {
     return (
@@ -13,11 +14,8 @@ export default function Home() {
             </Head>
 
             <main>
-                <p>Modern space with banquettes and a bar with a floral design, serving Japanese food plus cocktails.</p>
-                <Link href="/">discover our menu</Link>
-                <br /><br />
-                <div className="image"></div>
-                <h1>TSUNAMI</h1>
+                <Hero />
+                <Section_b />
             </main>
     </div>
     )
