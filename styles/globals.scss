@@ -1,26 +1,129 @@
-html,
+/* ------------------------------ Fonts import ------------------------------ */
+@import url("https://use.typekit.net/lkb4xhl.css");
+
+/* ------------------------------ Variables ------------------------------ */
+$primary: #BD9855;
+$primary_faded: #C67075;
+$secondary: #DBA4A7;
+$secondary_light: #EFD8D9;
+$off_white: #FAF8F3;
+$white: #FFFFFF;
+$background: #57554A;
+
+// ---------- Fonts ----------
+$header_font: bc-alphapipe,
+sans-serif;
+$text_font: museo,
+serif;
+
+// ---------- Font colours ----------
+$header: #0E0B06;
+$text: #0C1D32;
+
+// ---------- Font sizes ----------
+$links: clamp(1rem, 0vw + 1rem, 1rem);
+$paragraph: 20px;
+$header_4: clamp(1.27rem, 0.54vw + 1.13rem, 1.56rem);
+$header_3: clamp(1.42rem, 0.96vw + 1.18rem, 1.95rem);
+$header_2: clamp(1.6rem, 1.53vw + 1.22rem, 2.44rem);
+$header_1: clamp(1.8rem, 2.27vw + 1.23rem, 3.05rem);
+
+// ---------- Margins and paddings ----------
+$none: 0;
+$xxtra_small: clamp(0.19rem, calc(-0.01rem + 0.98vw), 0.75rem);
+$xtra_small: clamp(0.38rem, calc(-0.02rem + 1.96vw), 1.50rem);
+$small: clamp(0.75rem, calc(-0.03rem + 3.91vw), 3.00rem);
+$medium: clamp(1.13rem, calc(-0.05rem + 5.87vw), 4.50rem);
+$large: clamp(1.50rem, calc(-0.07rem + 7.83vw), 6.00rem);
+$xtra_large: clamp(2.25rem, calc(-0.10rem + 11.74vw), 9.00rem);
+
+// ---------- Defaults ----------
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: $none;
+    padding: $none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: $background;
+    color: $off_white;
+    font-family: $text_font;
+    font-size: $paragraph;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+// ------------------------------ Fonts ------------------------------
+
+h1,
+h2,
+h3,
+h4 {
+    color: $header;
+    font-family: $header_font;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1;
+    margin: $none;
+    padding: $none;
+}
+
+h1 {
+    font-size: 350px;
+    color: $white;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: $header_2;
+}
+
+h3 {
+    font-size: $header_3;
+}
+
+h4 {
+    font-size: $header_4;
+}
+
+p {
+    opacity: 0.7;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: $primary;
+    font-size: 24px;
+    font-family: $header_font;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:focus {
+        color: $header;
+    }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.image {
+    background-image: url("../public/images/image_1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 400px;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.25);;
 }

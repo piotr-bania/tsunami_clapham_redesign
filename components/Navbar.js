@@ -5,7 +5,9 @@ import logo from '../public/logo/tsunami_logo.svg'
 const Navbar = () => {
     return (
         <div>
-            Navbar
+            <Link href="/">
+                <Image className='logo' src={logo} alt="logo" width={120} height={60} />
+            </Link>
         </div>
     )
 }
