@@ -12,6 +12,10 @@ section.navbar {
         justify-content: space-between;
         align-items: center;
 
+        .burger {
+            cursor: pointer;
+        }
+
         .logo {
             display: flex;
             align-items: center;
