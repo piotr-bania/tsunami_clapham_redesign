@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../public/logo/tsunami_logo.svg'
@@ -25,7 +27,13 @@ const Navbar = () => {
                             </g>
                         </g>
                     </svg>
+
+                    <div className="menu_toggle">
+                        <div className="ham_box"></div>
+                    </div>
                 </div>
+                <div className="header_overlay"> </div>
+
                 {/* Middle */}
                 <Link href="/">
                 <Image className='logo' src={logo} alt="logo" width={120} height={28} />
