@@ -25,7 +25,7 @@ const Wave = () => {
 
     return (
         <mesh>
-            <planeGeometry args={[9, 5, 32, 32]} />
+            <planeGeometry args={[9, 7.8, 32, 32]} />
             <waveMaterial ref={ref} uTexture={image} />
         </mesh>
     )
@@ -33,7 +33,7 @@ const Wave = () => {
 
 const Element_2 = () => {
 return (
-    <Canvas className='image canvasElement2' camera={{ fov: 25, position: [0, 0, 15] }}
+    <Canvas className='image canvasElement2' camera={{ fov: 30, position: [0, 0, 15] }}
     style={{
         width: "auto",
         layout: "responsive",

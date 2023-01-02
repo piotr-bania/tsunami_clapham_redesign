@@ -9,19 +9,22 @@
     gap: 16px;
 
     .image {
-        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.25);
+        // box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.25);
     }
 
     .image_1 {
         grid-area: 3 / 2 / 10 / 8;
+        // border: 2px solid hotpink;
     }
     
     .image_2 {
         grid-area: 2 / 6 / 7 / 10;
+        // border: 2px solid hotpink;
     }
     
     .image_3 {
         grid-area: 4 / 9 / 11 / 12;
+        // border: 2px solid hotpink;
     }
 
     .subheader_hero {
