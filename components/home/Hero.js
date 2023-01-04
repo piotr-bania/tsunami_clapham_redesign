@@ -11,7 +11,7 @@ const Hero = () => {
             <div className=" image_1"><Element_1 /></div>
             <div className=" image_2"><Element_2 /></div>
             <d3v className=" image_3"><Element_3 /></d3v>
-        3
+
             <div className="subheader_hero">
                 <p>Modern space with banquettes and a bar with a floral design, serving Japanese food plus cocktails.</p>
                 <Link href="/">discover our menu</Link>

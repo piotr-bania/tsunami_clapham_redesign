@@ -3,6 +3,7 @@ import Head from 'next/head'
 // Components
 import Hero from '../components/home/Hero'
 import Section_b from '../components/home/Section_b'
+// import ImageSlider from '../components/image/Image_Slider'
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             </Head>
 
             <main>
+                {/* <ImageSlider /> */}
                 <Hero />
                 <Section_b />
             </main>
