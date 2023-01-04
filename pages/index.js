@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion as m } from 'framer-motion'
 
 // Components
 import Hero from '../components/home/Hero'
@@ -7,7 +8,12 @@ import Section_b from '../components/home/Section_b'
 
 export default function Home() {
     return (
-        <div>
+        <m.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        transition={{duration: 1.5, ease: 'easeOut', delay: 0.25}}
+        >
             <Head>
                 <title>Tsunami | Clapham</title>
                 <meta name="description" content="Tsunami | Clapham | Japanese Restaurant" />
@@ -19,6 +25,6 @@ export default function Home() {
                 <Hero />
                 <Section_b />
             </main>
-    </div>
+    </m.div>
     )
 }
